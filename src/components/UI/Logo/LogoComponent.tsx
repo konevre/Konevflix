@@ -5,7 +5,7 @@ import logo from "../../../resources/logo.png";
 const LogoComponent = () => {
     return (
         <a href="#">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="h-[45px]" />
         </a>
     );
 };

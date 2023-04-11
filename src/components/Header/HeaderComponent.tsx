@@ -8,7 +8,6 @@ const HeaderComponent = () => {
     return (
         <header className="fixed flex w-full items-center justify-between px-10 py-6">
             <LogoComponent />
-
             <div className="flex gap-x-6">
                 <LanguageSelectorComponent />
                 <SignInComponent />

@@ -1,0 +1,56 @@
+import React, { useState } from "react";
+
+import useCTA from "../../../hooks/useCTA";
+
+import invalid from "../../../resources/hero/invalid.svg";
+import chevron from "../../../resources/hero/chevron-right.svg";
+
+const CTAComponent = () => {
+    const { handleFocus, handleBlur, handleEmailChange, isFocused, email, isValidEmail } = useCTA();
+
+    const inputClass = email ? (isValidEmail ? "border-green-500" : "border-red-500") : "";
+    const labelStyle =
+        isFocused || email ? "bottom-6 -left-3 scale-75" : "bottom-4 left-0 scale-100";
+    const containerStyle = isFocused ? "outline outline-white outline-offset-2 rounded" : "";
+
+    return (
+        <div className="flex w-full justify-center gap-x-2">
+            <div
+                className={`${containerStyle} relative w-1/3 `}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+            >
+                <label
+                    htmlFor="email"
+                    className={`${labelStyle} pointer-events-none absolute transform pl-4 pt-2 text-gray-500 transition-all duration-150 ease-in`}
+                >
+                    Email address
+                </label>
+                <div className="h-full w-full">
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        onChange={handleEmailChange}
+                        value={email}
+                        minLength={5}
+                        maxLength={50}
+                        className={`${inputClass} w-full rounded border bg-[#161616B3] px-4 pb-2 pt-6 outline-none`}
+                    />
+                </div>
+                {!isValidEmail && email && (
+                    <div className="absolute -bottom-7 flex items-center gap-x-2">
+                        <img src={invalid} alt="invalid email" />
+                        <div className="text-sm text-red-500">Enter valid email address</div>
+                    </div>
+                )}
+            </div>
+            <button className="flex min-w-[200px] items-center justify-center gap-x-2 rounded bg-primary-red p-3 text-2xl text-white hover:bg-primary-red-hover">
+                Get Started
+                <img src={chevron} alt="chevron" />
+            </button>
+        </div>
+    );
+};
+
+export default CTAComponent;
