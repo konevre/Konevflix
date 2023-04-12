@@ -6,9 +6,9 @@ import LanguageSelectorComponent from "../UI/Selectors/LanguageSelectorComponent
 
 const HeaderComponent = () => {
     return (
-        <header className="fixed flex w-full items-center justify-between px-10 py-6">
+        <header className="fixed flex w-full items-center justify-between p-4 sm:px-10 sm:py-6">
             <LogoComponent />
-            <div className="flex gap-x-6">
+            <div className="flex gap-x-2 sm:gap-x-6">
                 <LanguageSelectorComponent />
                 <SignInComponent />
             </div>

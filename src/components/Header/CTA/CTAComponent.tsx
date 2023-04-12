@@ -12,11 +12,12 @@ const CTAComponent = () => {
     const labelStyle =
         isFocused || email ? "bottom-6 -left-3 scale-75" : "bottom-4 left-0 scale-100";
     const containerStyle = isFocused ? "outline outline-white outline-offset-2 rounded" : "";
+    const buttonStyle = !isValidEmail && email ? "mt-4 sm:mt-0" : "";
 
     return (
-        <div className="flex w-full justify-center gap-x-2">
+        <div className="flex w-full flex-col justify-center gap-x-2 gap-y-5 sm:flex-row">
             <div
-                className={`${containerStyle} relative w-1/3 `}
+                className={`${containerStyle} relative sm:w-1/3`}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
             >
@@ -26,18 +27,17 @@ const CTAComponent = () => {
                 >
                     Email address
                 </label>
-                <div className="h-full w-full">
-                    <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        onChange={handleEmailChange}
-                        value={email}
-                        minLength={5}
-                        maxLength={50}
-                        className={`${inputClass} w-full rounded border bg-[#161616B3] px-4 pb-2 pt-6 outline-none`}
-                    />
-                </div>
+
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    onChange={handleEmailChange}
+                    value={email}
+                    minLength={5}
+                    maxLength={50}
+                    className={`${inputClass} w-full rounded border bg-[#161616B3] px-4 pb-2 pt-6 outline-none`}
+                />
                 {!isValidEmail && email && (
                     <div className="absolute -bottom-7 flex items-center gap-x-2">
                         <img src={invalid} alt="invalid email" />
@@ -45,7 +45,9 @@ const CTAComponent = () => {
                     </div>
                 )}
             </div>
-            <button className="flex min-w-[200px] items-center justify-center gap-x-2 rounded bg-primary-red p-3 text-2xl text-white hover:bg-primary-red-hover">
+            <button
+                className={`${buttonStyle} flex min-w-[200px] items-center justify-center gap-x-2 rounded bg-primary-red p-3 text-2xl text-white hover:bg-primary-red-hover`}
+            >
                 Get Started
                 <img src={chevron} alt="chevron" />
             </button>
