@@ -9,7 +9,9 @@ const App = () => {
         <>
             <HeaderComponent />
             <HeroComponent />
-            <ValuePropsComponent />
+            <div className="w-full">
+                <ValuePropsComponent />
+            </div>
         </>
     );
 };
