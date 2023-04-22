@@ -7,7 +7,7 @@ import video from "../../resources/values/video.m4v";
 
 const TVValueComponent = () => {
     return (
-        <div className="min-h-auto relative mx-0 flex w-full flex-col items-center justify-center gap-y-3 px-8 py-[4.5em] md:flex-row">
+        <div className="min-h-auto relative mx-0 flex w-full flex-col items-center justify-center gap-y-3 px-8 py-[4.5em] lg:flex-row">
             <div className="flex basis-1/2 flex-col gap-y-8">
                 <TitleComponent title="Enjoy on your TV" />
                 <SubtitleComponent
@@ -22,7 +22,7 @@ const TVValueComponent = () => {
                     playsInline
                     muted
                     loop
-                    className="absolute bottom-[22%] -z-10  w-[68%] min-[461px]:bottom-[24%] md:bottom-[33%] md:w-[35%] lg:bottom-[30%]"
+                    className="absolute bottom-[22%] -z-10  w-[68%] min-[461px]:bottom-[24%] md:bottom-[25%] lg:bottom-[31%] lg:w-[35%]"
                 >
                     <source src={video} />
                 </video>
