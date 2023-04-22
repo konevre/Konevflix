@@ -3,7 +3,6 @@ import React from "react";
 import TitleComponent from "../UI/Titles/TitleComponent";
 import SubtitleComponent from "../UI/Titles/SubtitleComponent";
 import tv from "../../resources/values/tv.svg";
-import video from "../../resources/values/video.m4v";
 
 const TVValueComponent = () => {
     return (
@@ -16,7 +15,7 @@ const TVValueComponent = () => {
                 />
             </div>
             <div className="flex w-full basis-1/2 justify-center">
-                <img src={tv} alt="TV" className="w-full md:w-full" />
+                <img src={tv} alt="TV" className="relative -z-10 w-full md:w-full" />
                 <video
                     autoPlay
                     playsInline
@@ -24,7 +23,7 @@ const TVValueComponent = () => {
                     loop
                     className="absolute bottom-[22%] -z-10  w-[68%] min-[461px]:bottom-[24%] md:bottom-[25%] lg:bottom-[31%] lg:w-[35%]"
                 >
-                    <source src={video} />
+                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />
                 </video>
             </div>
         </div>
