@@ -15,9 +15,10 @@ const CompValueComponent = () => {
                 />
             </div>
             <div className="flex w-full basis-1/2 justify-center overflow-hidden">
-                <img src={devices} alt="devices" className="relative -z-10 w-full md:w-full" />
-                <div className="absolute bottom-[30%] -z-20 w-1/2 overflow-hidden">
-                    <video autoPlay playsInline muted loop className="overflow-clip object-contain">
+                <img src={devices} alt="devices" className="relative w-full md:w-full" />
+
+                <div className="absolute bottom-[30%] -z-10 w-[45%] overflow-hidden min-[400px]:bottom-[35%] min-[500px]:bottom-[40%] md:w-[45%] lg:w-[30%]">
+                    <video autoPlay playsInline muted loop className="w-full object-contain">
                         <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" />
                     </video>
                 </div>
