@@ -7,9 +7,9 @@ import HeaderComponent from "../Header/HeaderComponent";
 
 const HeroComponent = () => {
     return (
-        <div className="h-full w-full bg-[url(../resources/hero/hero.png)] bg-cover bg-no-repeat px-8 xl:px-[10em]">
+        <div className="flex h-full w-full flex-col bg-[url(../resources/hero/hero.png)] bg-cover bg-no-repeat p-8 pt-0 xl:px-[10em]">
             <HeaderComponent />
-            <div className="mx-auto flex h-full max-w-[950px] flex-col items-center justify-center gap-y-5 text-white">
+            <div className="mx-auto flex max-w-[950px] basis-5/6 flex-col items-center justify-center gap-y-5 text-white">
                 <TitleComponent title="Unlimited movies, TV shows and more." isCenter={true} />
                 <SubtitleComponent isSmall={true} subtitle="Watch anywhere. Cancel anytime." />
                 <CTAComponent />
