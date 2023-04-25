@@ -16,12 +16,12 @@ const CTAComponent = () => {
     const buttonStyle = !isValidEmail && email ? "mt-4 sm:mt-0" : "";
 
     return (
-        <>
+        <div className="flex flex-col gap-y-5">
             <SubtitleComponent
                 isSmall={false}
                 subtitle="Ready to watch? Enter your email to create or restart your membership."
             />
-            <div className="-mt-3 flex w-full flex-col justify-center gap-x-2 gap-y-5 sm:flex-row">
+            <div className=" flex w-full flex-col justify-center gap-x-2 gap-y-5 sm:flex-row">
                 <div
                     className={`${containerStyle} relative sm:w-1/3`}
                     onFocus={handleFocus}
@@ -42,7 +42,7 @@ const CTAComponent = () => {
                         value={email}
                         minLength={5}
                         maxLength={50}
-                        className={`${inputClass} w-full rounded border bg-[#161616B3] px-4 pb-2 pt-6 outline-none`}
+                        className={`${inputClass} w-full rounded border bg-[#161616B3] px-4 pb-2 pt-6 text-white outline-none`}
                     />
                     {!isValidEmail && email && (
                         <div className="absolute -bottom-7 flex items-center gap-x-2">
@@ -58,7 +58,7 @@ const CTAComponent = () => {
                     <img src={chevron} alt="chevron" />
                 </button>
             </div>
-        </>
+        </div>
     );
 };
 

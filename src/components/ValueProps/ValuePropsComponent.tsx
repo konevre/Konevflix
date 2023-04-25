@@ -19,6 +19,7 @@ const ValuePropsComponent = () => {
             <KidsValueComponent />
             <div className="h-2 w-full bg-[#222222]" />
             <FAQComponent />
+            <div className="h-2 w-full bg-[#222222]" />
         </>
     );
 };
