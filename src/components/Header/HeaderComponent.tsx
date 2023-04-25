@@ -6,7 +6,7 @@ import LanguageSelectorComponent from "../UI/Selectors/LanguageSelectorComponent
 
 const HeaderComponent = () => {
     return (
-        <header className="absolute flex w-full items-center justify-between p-4 sm:px-10 sm:py-6">
+        <header className="flex w-full items-center justify-between py-4 sm:py-6">
             <LogoComponent />
             <div className="flex gap-x-2 sm:gap-x-6">
                 <LanguageSelectorComponent />

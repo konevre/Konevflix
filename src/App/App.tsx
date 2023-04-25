@@ -1,17 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import HeaderComponent from "../components/Header/HeaderComponent";
-import HeroComponent from "../components/Hero/HeroComponent";
-import ValuePropsComponent from "../components/ValueProps/ValuePropsComponent";
-import FooterComponent from "../components/Footer/FooterComponent";
+import LandingPage from "../pages/LandingPage";
+import LoginPage from "../pages/SignInPage";
 
 const App = () => {
     return (
-        <>
-            <HeroComponent />
-            <ValuePropsComponent />
-            <FooterComponent />
-        </>
+        <Router>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/login" element={<LoginPage />} />
+            </Routes>
+        </Router>
     );
 };
 
