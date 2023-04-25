@@ -9,7 +9,7 @@ import downloading from "../../resources/values/download.gif";
 
 const MobileValueComponent = () => {
     return (
-        <div className="min-h-auto relative mx-0 flex w-full flex-col items-center justify-center gap-y-3 px-8 py-[4.5em] sm:px-28 lg:flex-row-reverse">
+        <div className="min-h-auto relative mx-0 flex w-full flex-col items-center justify-center gap-y-3 px-8 py-[4.5em] sm:px-28 lg:flex-row-reverse xl:px-[10em]">
             <div className="flex basis-1/2 flex-col gap-y-8">
                 <TitleComponent title="Download your shows to watch offline." />
                 <SubtitleComponent
