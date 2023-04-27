@@ -16,7 +16,7 @@ const FooterLoginComponent = () => {
     });
 
     return (
-        <footer className="min-h-auto relative flex w-full flex-col gap-y-8 px-4 py-6 xl:px-[10em]">
+        <footer className="min-h-auto relative flex w-full flex-col gap-y-8 px-4 py-6 sm:p-8 md:bg-black/75 xl:px-[10em]">
             <a href="#" className=" text-base text-[#737373] active:text-primary-red">
                 Questions? Contact Us.
             </a>

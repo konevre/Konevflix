@@ -9,10 +9,10 @@ import FooterLoginComponent from "../Footer/FooterLoginComponent";
 
 const LoginComponent = () => {
     return (
-        <>
-            <div className="p-4 xl:px-[10em]">
+        <div className="md:bg-[url(../resources/login/bg.jpg)] md:bg-cover md:bg-no-repeat">
+            <div className="p-4 sm:p-8">
                 <LogoComponent />
-                <div className="mt-6 text-[#B3B3B3]">
+                <div className="mt-6 text-[#B3B3B3] md:mx-auto md:mb-16 md:min-h-[620px] md:w-[28em] md:rounded md:bg-black/75 md:p-16 md:pb-8">
                     <TitleComponent title="Sign In" isCenter={false} />
                     <div className="my-7 flex flex-col gap-y-4">
                         <LoginInputComponent type="email" />
@@ -40,9 +40,9 @@ const LoginComponent = () => {
                     <CaptchaComponent />
                 </div>
             </div>
-            <div className="mt-10 h-[1px] bg-[#737373]"></div>
+            <div className="mt-10 h-[1px] bg-[#737373] md:hidden"></div>
             <FooterLoginComponent />
-        </>
+        </div>
     );
 };
 
