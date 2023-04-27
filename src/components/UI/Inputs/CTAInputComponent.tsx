@@ -7,10 +7,9 @@ import { TInput } from "../../../types";
 
 interface IInputProps {
     type: TInput;
-    style: "CTA" | "Login";
 }
 
-const InputComponent = ({ type, style }: IInputProps) => {
+const CTAInputComponent = ({ type }: IInputProps) => {
     const { handleFocus, handleBlur, handleInputChange, isFocused, isValidInput, input } =
         useInput(type);
 
@@ -48,4 +47,4 @@ const InputComponent = ({ type, style }: IInputProps) => {
     );
 };
 
-export default InputComponent;
+export default CTAInputComponent;

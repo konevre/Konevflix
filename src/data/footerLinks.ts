@@ -56,3 +56,30 @@ export const footerLinks = [
         link: "#",
     },
 ];
+
+export const footerLinksSmall = [
+    {
+        title: "FAQ",
+        link: "#",
+    },
+    {
+        title: "Help Center",
+        link: "#",
+    },
+    {
+        title: "Corporate Information",
+        link: "#",
+    },
+    {
+        title: "Terms of Use",
+        link: "#",
+    },
+    {
+        title: "Privacy",
+        link: "#",
+    },
+    {
+        title: "Cookie preferences",
+        link: "#",
+    },
+];

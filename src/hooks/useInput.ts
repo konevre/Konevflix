@@ -1,9 +1,7 @@
 import { useState } from "react";
 
 import { TInput } from "../types";
-
-// Your password must contain between 4 and 60 characters.
-// Please enter a valid email or phone number.
+import { validateEmail, validatePassword } from "../utils/validators";
 
 const useInput = (type: TInput) => {
     const [isFocused, setFocus] = useState<boolean>(false);
@@ -22,8 +20,8 @@ const useInput = (type: TInput) => {
         const inputValue = e.target.value;
         setInput(inputValue);
 
-        if (type === "email") setIsValidInput(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputValue));
-        if (type === "password") setIsValidInput(true);
+        if (type === "email") setIsValidInput(validateEmail(inputValue));
+        if (type === "password") setIsValidInput(validatePassword(inputValue));
     };
 
     return { handleFocus, handleBlur, handleInputChange, isFocused, isValidInput, input };
