@@ -2,10 +2,9 @@ import React from "react";
 
 import LogoComponent from "../UI/Logo/LogoComponent";
 import TitleComponent from "../UI/Titles/TitleComponent";
-import LoginInputComponent from "../UI/Inputs/LoginInputComponent";
-import SignInButtonComponent from "../UI/Buttons/SignInButtonComponent";
 import CaptchaComponent from "../UI/Captcha/CaptchaComponent";
 import FooterLoginComponent from "../Footer/FooterLoginComponent";
+import FormComponent from "../Form/FormComponent";
 
 const LoginComponent = () => {
     return (
@@ -14,11 +13,7 @@ const LoginComponent = () => {
                 <LogoComponent />
                 <div className="mt-6 text-[#B3B3B3] md:mx-auto md:mb-16 md:min-h-[620px] md:w-[28em] md:rounded md:bg-black/75 md:p-16 md:pb-8">
                     <TitleComponent title="Sign In" isCenter={false} />
-                    <div className="my-7 flex flex-col gap-y-4">
-                        <LoginInputComponent type="email" />
-                        <LoginInputComponent type="password" />
-                    </div>
-                    <SignInButtonComponent size="big" />
+                    <FormComponent />
                     <div className="mt-4 flex items-center">
                         <div className="flex grow items-center">
                             <input type="checkbox" id="remember" />
