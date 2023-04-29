@@ -8,7 +8,7 @@ const CTAComponent = () => {
     return (
         <div className="flex flex-col gap-y-5">
             <SubtitleComponent
-                isSmall={false}
+                style="text-lg sm:text-2xl"
                 subtitle="Ready to watch? Enter your email to create or restart your membership."
             />
             <div className="flex w-full flex-col justify-center gap-x-2 gap-y-5 sm:flex-row">

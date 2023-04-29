@@ -3,8 +3,8 @@ import React from "react";
 import LogoComponent from "../UI/Logo/LogoComponent";
 import TitleComponent from "../UI/Titles/TitleComponent";
 import CaptchaComponent from "../UI/Captcha/CaptchaComponent";
-import FooterLoginComponent from "../Footer/FooterLoginComponent";
 import FormComponent from "../Form/FormComponent";
+import FooterSmallComponent from "../Footer/FooterSmallComponent";
 
 const LoginComponent = () => {
     return (
@@ -12,7 +12,7 @@ const LoginComponent = () => {
             <div className="p-4 sm:p-8">
                 <LogoComponent />
                 <div className="mt-6 text-[#B3B3B3] md:mx-auto md:mb-16 md:min-h-[620px] md:w-[28em] md:rounded md:bg-black/75 md:p-16 md:pb-8">
-                    <TitleComponent title="Sign In" isCenter={false} />
+                    <TitleComponent title="Sign In" style="" />
                     <FormComponent />
                     <div className="mt-4 flex items-center">
                         <div className="flex grow items-center">
@@ -36,7 +36,7 @@ const LoginComponent = () => {
                 </div>
             </div>
             <div className="mt-10 h-[1px] bg-[#737373] md:hidden"></div>
-            <FooterLoginComponent />
+            <FooterSmallComponent color="black" />
         </div>
     );
 };

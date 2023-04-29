@@ -1,8 +1,8 @@
 import React from "react";
 
 import LogoComponent from "../UI/Logo/LogoComponent";
-import SignInButtonComponent from "../UI/Buttons/SignInButtonComponent";
 import LanguageSelectorComponent from "../UI/Selectors/LanguageSelectorComponent";
+import ButtonComponent from "../UI/Buttons/ButtonComponent";
 
 const HeaderComponent = () => {
     return (
@@ -10,7 +10,7 @@ const HeaderComponent = () => {
             <LogoComponent />
             <div className="flex gap-x-2 sm:gap-x-6">
                 <LanguageSelectorComponent />
-                <SignInButtonComponent size="small" />
+                <ButtonComponent size="small" title="Sign In" />
             </div>
         </header>
     );

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import useInput from "../../../hooks/useInput";
 import { TInput } from "../../../types";
 
 interface IInputProps {
     type: TInput;
+    handler: (type: string) => void;
 }
 
 const errors = {
@@ -12,9 +13,14 @@ const errors = {
     password: "Your password must contain between 4 and 60 characters.",
 };
 
-const LoginInputComponent = ({ type }: IInputProps) => {
+const LoginInputComponent = ({ type, handler }: IInputProps) => {
     const { handleFocus, handleBlur, handleInputChange, isFocused, isValidInput, input } =
         useInput(type);
+
+    useEffect(() => {
+        if (input && isValidInput) handler(input);
+        if (input && !isValidInput) handler("");
+    }, [input]);
 
     const inputClass = input ? (isValidInput ? "" : "-mb-[2px] border-b-2 border-b-[#E87C03]") : "";
     const passwordStyle =

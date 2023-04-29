@@ -31,7 +31,7 @@ const FAQComponent = () => {
 
     return (
         <div className="min-h-auto relative mx-0 flex w-full flex-col items-center justify-center gap-y-5 px-8 py-[4.5em] md:gap-y-10 xl:px-[10em]">
-            <TitleComponent title="Frequently Asked Questions" isCenter={true} />
+            <TitleComponent title="Frequently Asked Questions" style="text-center" />
             <div className="flex w-full flex-col gap-y-2">{faqs}</div>
             <CTAComponent />
         </div>

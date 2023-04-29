@@ -10,8 +10,11 @@ const HeroComponent = () => {
         <div className="flex h-full w-full flex-col bg-[url(../resources/hero/hero.png)] bg-cover bg-no-repeat p-8 pt-0 xl:px-[10em]">
             <HeaderComponent />
             <div className="mx-auto flex max-w-[950px] basis-5/6 flex-col items-center justify-center gap-y-5 text-white">
-                <TitleComponent title="Unlimited movies, TV shows and more." isCenter={true} />
-                <SubtitleComponent isSmall={true} subtitle="Watch anywhere. Cancel anytime." />
+                <TitleComponent title="Unlimited movies, TV shows and more." style="text-center" />
+                <SubtitleComponent
+                    style="text-base sm:text-xl"
+                    subtitle="Watch anywhere. Cancel anytime."
+                />
                 <CTAComponent />
             </div>
         </div>
