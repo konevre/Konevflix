@@ -26,7 +26,7 @@ const FooterComponent = () => {
             <ul className="grid gap-y-3 min-[400px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
                 {links}
             </ul>
-            <LanguageSelectorComponent />
+            <LanguageSelectorComponent color="black" />
         </footer>
     );
 };

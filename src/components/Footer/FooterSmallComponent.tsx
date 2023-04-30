@@ -29,7 +29,7 @@ const FooterSmallComponent = ({ color }: IFooterSmall) => {
                 Questions? Contact Us.
             </a>
             <ul className="grid grid-cols-2 gap-y-3 sm:grid-cols-3 lg:grid-cols-4">{links}</ul>
-            <LanguageSelectorComponent />
+            <LanguageSelectorComponent color={color} />
         </footer>
     );
 };

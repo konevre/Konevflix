@@ -5,6 +5,7 @@ interface IWorldProps {
 }
 
 const WorldComponent = ({ color }: IWorldProps) => {
+    // TODO: how to change path ?
     return (
         <svg
             width="20"

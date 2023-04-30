@@ -6,7 +6,7 @@ interface ISubtitle {
 }
 
 const SubtitleComponent = ({ subtitle, style }: ISubtitle) => {
-    return <h2 className={`${style} text-center font-normal text-white`}>{subtitle}</h2>;
+    return <h2 className={`${style} text-center font-normal`}>{subtitle}</h2>;
 };
 
 export default SubtitleComponent;
