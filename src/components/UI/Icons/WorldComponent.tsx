@@ -11,7 +11,7 @@ const WorldComponent = ({ color }: IWorldProps) => {
             width="20"
             height="20"
             viewBox="0 0 20 20"
-            fill={color}
+            fill={color === "white" ? "black" : "white"}
             xmlns="http://www.w3.org/2000/svg"
         >
             <g clipPath="url(#clip0_28_36)">
@@ -53,7 +53,7 @@ const WorldComponent = ({ color }: IWorldProps) => {
             </g>
             <defs>
                 <clipPath id="clip0_28_36">
-                    <rect width="20" height="20" fill={color} />
+                    <rect width="20" height="20" fill={color === "white" ? "black" : "white"} />
                 </clipPath>
             </defs>
         </svg>
