@@ -12,7 +12,7 @@ const HeroComponent = () => {
             <div className="mx-auto flex max-w-[950px] basis-5/6 flex-col items-center justify-center gap-y-5 text-white">
                 <TitleComponent title="Unlimited movies, TV shows and more." style="text-center" />
                 <SubtitleComponent
-                    style="text-base sm:text-xl"
+                    style="text-base sm:text-xl text-white"
                     subtitle="Watch anywhere. Cancel anytime."
                 />
                 <CTAComponent />

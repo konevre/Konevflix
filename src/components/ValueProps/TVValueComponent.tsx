@@ -8,9 +8,12 @@ const TVValueComponent = () => {
     return (
         <div className="min-h-auto relative mx-0 flex w-full flex-col items-center justify-center gap-y-3 px-8 py-[4.5em] lg:flex-row xl:px-[10em]">
             <div className="flex basis-1/2 flex-col gap-y-8">
-                <TitleComponent title="Enjoy on your TV" style="" />
+                <TitleComponent
+                    title="Enjoy on your TV"
+                    style="text-white text-center lg:text-start"
+                />
                 <SubtitleComponent
-                    style="text-lg sm:text-2xl"
+                    style="text-lg sm:text-2xl text-white text-center lg:text-start"
                     subtitle="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
                 />
             </div>

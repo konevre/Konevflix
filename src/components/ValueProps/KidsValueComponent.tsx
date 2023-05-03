@@ -8,9 +8,12 @@ const KidsValueComponent = () => {
     return (
         <div className="min-h-auto relative mx-0 flex w-full flex-col items-center justify-center gap-y-3 px-8 py-[4.5em] lg:flex-row-reverse xl:px-[10em]">
             <div className="flex basis-1/2 flex-col gap-y-8">
-                <TitleComponent title="Create profiles for kids." style="" />
+                <TitleComponent
+                    title="Create profiles for kids."
+                    style="text-white text-center lg:text-start"
+                />
                 <SubtitleComponent
-                    style="text-lg sm:text-2xl"
+                    style="text-lg sm:text-2xl text-white text-center lg:text-start"
                     subtitle="Send kids on adventures with their favorite characters in a space made just for them—free with your membership."
                 />
             </div>

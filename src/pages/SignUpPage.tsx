@@ -1,12 +1,9 @@
 import React from "react";
-import FirstStepComponent from "../components/SignUp/FirstStepComponent";
+
+import SignUpComponent from "../components/SignUp/SignUpComponent";
 
 const SignUpPage = () => {
-    return (
-        <>
-            <FirstStepComponent />
-        </>
-    );
+    return <SignUpComponent />;
 };
 
 export default SignUpPage;

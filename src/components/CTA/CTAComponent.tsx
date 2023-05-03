@@ -8,11 +8,11 @@ const CTAComponent = () => {
     return (
         <div className="flex flex-col gap-y-5">
             <SubtitleComponent
-                style="text-lg sm:text-2xl"
+                style="text-lg sm:text-2xl text-white"
                 subtitle="Ready to watch? Enter your email to create or restart your membership."
             />
             <div className="flex w-full flex-col justify-center gap-x-2 gap-y-5 sm:flex-row">
-                <CTAInputComponent type="email" />
+                <CTAInputComponent type="email" color="black" />
                 <button
                     className={`flex min-w-[200px] items-center justify-center gap-x-2 rounded bg-primary-red p-3 text-2xl text-white hover:bg-primary-red-hover`}
                 >

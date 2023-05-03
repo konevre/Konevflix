@@ -5,7 +5,7 @@ interface IWorldProps {
 }
 
 const WorldComponent = ({ color }: IWorldProps) => {
-    // TODO: how to change path ?
+    // TODO: how to change path ? it's white on hero section
     return (
         <svg
             width="20"
