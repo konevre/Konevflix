@@ -5,7 +5,6 @@ import check from "../../resources/signup/check.svg";
 import TitleComponent from "../UI/Titles/TitleComponent";
 import SubtitleComponent from "../UI/Titles/SubtitleComponent";
 import ButtonComponent from "../UI/Buttons/ButtonComponent";
-import CTAInputComponent from "../UI/Inputs/CTAInputComponent";
 
 const SecondStepComponent = () => {
     return (

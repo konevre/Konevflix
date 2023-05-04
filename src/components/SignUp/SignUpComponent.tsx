@@ -7,6 +7,7 @@ import FooterSmallComponent from "../Footer/FooterSmallComponent";
 import FirstStepComponent from "./FirstStepComponent";
 import FirstStepRegformComponent from "./FirstStepRegformComponent";
 import SecondStepComponent from "./SecondStepComponent";
+import SecondStepFormComponent from "./SecondStepFormComponent";
 
 const SignUpComponent = () => {
     return (
@@ -22,6 +23,7 @@ const SignUpComponent = () => {
                 <Route path="/" element={<FirstStepComponent />} />
                 <Route path="regform" element={<FirstStepRegformComponent />} />
                 <Route path="plan" element={<SecondStepComponent />} />
+                <Route path="planform" element={<SecondStepFormComponent />} />
             </Routes>
             <div className="h-[1px] bg-[#E6E6E6]"></div>
             <FooterSmallComponent color="white" />
