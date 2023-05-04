@@ -1,4 +1,4 @@
-# Netflix clone (Konevflix)
+# Netflix clone (Konevflix) - NB: project is in development!
 
 ## About
 
